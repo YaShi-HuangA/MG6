@@ -68,6 +68,14 @@ public class Cat : MonoBehaviour
 
         
         // STEP 1 -------------------------------------------------------------
+        if (_rigidbody.linearVelocity.y > 0)
+        {
+            _collider.enabled = false;
+        }
+        else
+        {
+            _collider.enabled = true;
+        }
     }
 
     // ------------------------------------------------------------------------
